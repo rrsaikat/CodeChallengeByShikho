@@ -1,4 +1,4 @@
-package com.rezwan.codechallengebyshikho
+package com.rezwan.codechallengebyshikho.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.rezwan.codechallengebyshikho.R
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.

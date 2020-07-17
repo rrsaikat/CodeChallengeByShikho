@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.rezwan.codechallengebyshikho.FirstFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.rezwan.codechallengebyshikho.SecondFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 

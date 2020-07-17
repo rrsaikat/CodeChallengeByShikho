@@ -1,15 +1,15 @@
-package com.rezwan.codechallengebyshikho
+package com.rezwan.codechallengebyshikho.ui.home
 
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.apollographql.apollo.ApolloCall
 import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.coroutines.toDeferred
-import com.google.gson.Gson
+import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
+import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.const.appconst.BASE_URL
 import com.rezwan.codechallengebyshikho.ui.base.BaseActivity
 import kotlinx.coroutines.launch
@@ -17,7 +17,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
 
-class MainActivity : BaseActivity() {
+class HomeActivity : BaseActivity() {
     private lateinit var apolloClient: ApolloClient
     lateinit var graphQLZeroPostListAPiCall: ApolloCall<LoadAllPostsQuery.Data>
 
@@ -53,7 +53,7 @@ class MainActivity : BaseActivity() {
 
         launch {
             val response = apolloClient().query(LoadAllPostsQuery()).toDeferred().await()
-            Toast.makeText(this@MainActivity, "${response.data?.posts?.data?.size}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@HomeActivity, "${response.data?.posts?.data?.size}", Toast.LENGTH_SHORT).show()
             if (response == null || response.hasErrors()){
                 Log.e("size  ", "Something wrong")
             }
