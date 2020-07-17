@@ -1,4 +1,4 @@
-query (
+query LoadAllPosts(
     $options: PageQueryOptions
 ) {
     posts(options: $options) {

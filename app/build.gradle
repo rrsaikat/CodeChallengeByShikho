@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.apollographql.apollo'
 
 android {
     compileSdkVersion 29
@@ -31,6 +32,7 @@ android {
     }
 }
 
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -45,12 +47,21 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //Apollo client
-    implementation "com.apollographql.apollo:apollo-runtime:1.0.0"
-    implementation "com.apollographql.apollo:apollo-android-support:1.0.0"
-    implementation "com.apollographql.apollo:apollo-rx2-support:0.4.4"
+    implementation 'com.apollographql.apollo:apollo-runtime:2.2.0'
+    implementation 'com.apollographql.apollo:apollo-coroutines-support:2.2.0'
 
-    //rx2
+    //rxjava2
     implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
 
+    //okhttp3
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+
+apollo {
+    // instruct the compiler to generate Kotlin models
+    generateKotlinModels.set(true)
 }

@@ -1,23 +1,69 @@
 package com.rezwan.codechallengebyshikho
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.apollographql.apollo.ApolloCall
+import com.apollographql.apollo.ApolloClient
+import com.apollographql.apollo.coroutines.toDeferred
+import com.google.gson.Gson
+import com.rezwan.codechallengebyshikho.const.appconst.BASE_URL
+import com.rezwan.codechallengebyshikho.ui.base.BaseActivity
+import kotlinx.coroutines.launch
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
+import java.util.concurrent.TimeUnit
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
+    private lateinit var apolloClient: ApolloClient
+    lateinit var graphQLZeroPostListAPiCall: ApolloCall<LoadAllPostsQuery.Data>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        /*val okHttpClient = OkHttpClient.Builder()
+            .addInterceptor {
+                val original = it.request()
+                val builder = original.newBuilder().method(original.method, original.body)
+                it.proceed(builder.build())
+            }
+            .build()*/
+
+
+        val okHttpClient = OkHttpClient.Builder()
+            .addInterceptor(HttpLoggingInterceptor().apply {
+                level = HttpLoggingInterceptor.Level.BODY
+            })
+            .connectTimeout(1, TimeUnit.MINUTES)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(15, TimeUnit.SECONDS)
+            .build()
+
+
+        apolloClient = ApolloClient.builder()
+            .serverUrl(BASE_URL)
+            .okHttpClient(okHttpClient)
+            .build()
+
+
+        launch {
+            val response = apolloClient().query(LoadAllPostsQuery()).toDeferred().await()
+            Toast.makeText(this@MainActivity, "${response.data?.posts?.data?.size}", Toast.LENGTH_SHORT).show()
+            if (response == null || response.hasErrors()){
+                Log.e("size  ", "Something wrong")
+            }
+            Log.e("size  ", "${response.data?.posts?.data?.size}")
         }
+
+    }
+
+    fun apolloClient(): ApolloClient {
+        return this.apolloClient;
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
