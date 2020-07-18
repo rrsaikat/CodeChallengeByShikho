@@ -1,8 +1,9 @@
 package com.rezwan.codechallengebyshikho.di.components
 
+import com.beyazidyargici.pokeinfo.di.module.ViewModelModule
 import com.rezwan.codechallengebyshikho.App
-import com.rezwan.codechallengebyshikho.di.modules.ActivityBuildersModule
-import com.rezwan.codechallengebyshikho.di.modules.AppModule
+import com.rezwan.codechallengebyshikho.data.data_source.DataSourceModule
+import com.rezwan.codechallengebyshikho.di.modules.*
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
@@ -18,9 +19,12 @@ import javax.inject.Singleton
     modules = [
         // AndroidSupportInjectionModule is a class of Dagger and we don't need to create it.
         // If you want to use injection in fragment then you should use AndroidSupportInjectionModule.class else use AndroidInjectionModule.
-        AndroidSupportInjectionModule::class,
-        AppModule::class,
-        ActivityBuildersModule::class
+        ActivityModule::class,
+        FragmentModule::class,
+        NetworkModule::class,
+        RepositoryModule::class,
+        ViewModelModule::class,
+        AndroidSupportInjectionModule::class
     ]
 )
 interface AppComponent {
@@ -30,6 +34,12 @@ interface AppComponent {
 
         @BindsInstance // Bind our application instance to our Dagger graph.
         fun application(application: App): Builder
+
+        @BindsInstance
+        fun networkModule(networkModule: NetworkModule): Builder
+        //
+        @BindsInstance
+        fun databaseModule(databaseModule: DatabaseModule): Builder
 
         fun build(): AppComponent
     }

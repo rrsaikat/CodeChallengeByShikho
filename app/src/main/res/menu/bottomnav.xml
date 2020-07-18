@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_users"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+        android:title="@string/title_home"/>
+
+    <item
+        android:id="@+id/navigation_posts"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="@string/title_posts"/>
+
+    <item
+        android:id="@+id/navigation_finder"
+        android:icon="@drawable/ic_baseline_find_in_page_24"
+        android:title="@string/title_finder"/>
+
+</menu>
