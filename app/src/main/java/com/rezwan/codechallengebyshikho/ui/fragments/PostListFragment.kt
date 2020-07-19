@@ -16,7 +16,6 @@ import com.rezwan.codechallengebyshikho.ext.error
 import com.rezwan.codechallengebyshikho.ext.showShortToast
 import com.rezwan.codechallengebyshikho.ext.validatelistener
 import com.rezwan.codechallengebyshikho.model.Post
-import com.rezwan.codechallengebyshikho.model.PostAction
 import com.rezwan.codechallengebyshikho.ui.base.BaseFragment
 import com.rezwan.codechallengebyshikho.ui.viewmodel.SharedViewModel
 import com.rezwan.etracker.mizanur.adapters.PostListAdapter
@@ -102,11 +101,11 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
     }
 
     private fun onPostActionClicked(post: Post) {
-        if (post.postAction == PostAction.EDIT){
-            context?.showShortToast("Edit")
-        }else if (post.postAction == PostAction.DELETE){
-            context?.showShortToast("DELETE")
-        }
+//        if (post.postAction == PostAction.EDIT){
+//            context?.showShortToast("Edit")
+//        }else if (post.postAction == PostAction.DELETE){
+//            context?.showShortToast("DELETE")
+//        }
     }
 
     private fun initRecyclerConfig() {

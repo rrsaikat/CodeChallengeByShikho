@@ -11,6 +11,7 @@ import com.apollographql.apollo.api.Response
 import com.apollographql.apollo.coroutines.toDeferred
 import com.apollographql.apollo.exception.ApolloException
 import com.rezwan.codechallengebyshikho.*
+import com.rezwan.codechallengebyshikho.data.repository.UserRepository
 import com.rezwan.codechallengebyshikho.ext.showShortToast
 import com.rezwan.codechallengebyshikho.type.CreatePostInput
 import com.rezwan.codechallengebyshikho.ui.base.BaseViewModel
@@ -18,13 +19,15 @@ import kotlinx.coroutines.launch
 import java.lang.Exception
 import javax.inject.Inject
 
-class SharedViewModel @Inject constructor(val apolloClient: ApolloClient) : BaseViewModel() {
+class SharedViewModel @Inject constructor(val apolloClient: ApolloClient, val userRepository: UserRepository) : BaseViewModel() {
 
     val isLoading = MutableLiveData<Boolean>()
     val postLivedata = MutableLiveData<LoadAllPostsQuery.Posts>()
     val postByIdLivedata = MutableLiveData<GetPostByIdQuery.Post>()
     val userByIdLivedata = MutableLiveData<GetUserByIdQuery.User>()
     val photoAlbumLivedata = MutableLiveData<GetAlbumQuery.Photos>()
+
+    val posts = userRepository.fectchedPosts
 
     @Inject
     lateinit var app: App

@@ -1,28 +1,24 @@
 package com.rezwan.codechallengebyshikho.data.repository
 
-import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import com.apollographql.apollo.ApolloClient
-import com.apollographql.apollo.coroutines.toDeferred
-import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
+import com.rezwan.codechallengebyshikho.data.dao.UserPostDao
+import com.rezwan.codechallengebyshikho.data.data_source.PostRemoteDataSource
+import com.rezwan.codechallengebyshikho.data.data_source.resultLiveData
+import com.rezwan.codechallengebyshikho.model.Post
 import javax.inject.Inject
+import javax.inject.Singleton
 
-class UserRepository @Inject constructor(val apolloClient: ApolloClient) : Repository {
-    // its used for pass fetched data to fetchedAllPost
-    val mFetchedAllPost = MutableLiveData<LoadAllPostsQuery.Data>()
+@Singleton
+class UserRepository @Inject constructor(private val postDao: UserPostDao, val postRemoteDataSource: PostRemoteDataSource) {
+    val fectchedPosts = resultLiveData(
+        databaseQuery = { postDao.getAllPost() },
+        networkCall = { postRemoteDataSource.fetchPostData() },
+        saveCallResult = {
+            val plist:ArrayList<Post> = ArrayList()
 
-
-    override val fetchedPostData: LiveData<LoadAllPostsQuery.Data>
-        get() = mFetchedAllPost
-
-    override suspend fun fetchCurrentAllPost() {
-        try {
-            val fetchedData = apolloClient.query(LoadAllPostsQuery()).toDeferred().await()
-            mFetchedAllPost.postValue(fetchedData.data)
-            Log.e("connectivity", "Yes internet connection")
-        } catch (e: Exception) {
-            Log.e("connectivity", "No internet connection" + e.toString())
+            it?.posts?.data?.forEach {
+                plist.add(Post(it?.id ?: "" , it?.title ?: ""))
+            }
+            postDao.insertAll(plist)
         }
-    }
+    )
 }

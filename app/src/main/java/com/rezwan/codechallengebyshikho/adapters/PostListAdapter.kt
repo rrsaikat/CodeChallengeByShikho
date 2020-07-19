@@ -9,7 +9,6 @@ import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
 import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.databinding.ItemPostBinding
 import com.rezwan.codechallengebyshikho.model.Post
-import com.rezwan.codechallengebyshikho.model.PostAction
 
 class PostListAdapter(
     var list: List<LoadAllPostsQuery.Data1>,
@@ -42,13 +41,13 @@ class PostListAdapter(
         val binding: ItemPostBinding? = DataBindingUtil.bind(view)
 
         init {
-            binding?.btnDelete?.setOnClickListener {
-                btnClick(Post(PostAction.DELETE, list[adapterPosition]))
-            }
-
-            binding?.btnEdit?.setOnClickListener {
-                btnClick(Post(PostAction.EDIT, list[adapterPosition]))
-            }
+//            binding?.btnDelete?.setOnClickListener {
+//                btnClick(Post(PostAction.DELETE, list[adapterPosition]))
+//            }
+//
+//            binding?.btnEdit?.setOnClickListener {
+//                btnClick(Post(PostAction.EDIT, list[adapterPosition]))
+//            }
         }
     }
 }

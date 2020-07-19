@@ -1,7 +1,23 @@
 package com.rezwan.codechallengebyshikho.model
 
-import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
 
-data class Post(val postAction: PostAction, val postdata: LoadAllPostsQuery.Data1)
+@Entity(tableName = "post_table")
+data class Post(
+    @PrimaryKey
+    @field:SerializedName("id")
+    val id: String,
 
-enum class PostAction {DELETE, EDIT}
+    @field:SerializedName("title")
+    val title: String
+
+//    @field:SerializedName("postAction")
+//    val postAction: PostAction
+) {
+
+    override fun toString() = title
+}
+
+//enum class PostAction { DELETE, EDIT }
