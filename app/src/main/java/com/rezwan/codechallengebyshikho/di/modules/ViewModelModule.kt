@@ -2,7 +2,7 @@ package com.beyazidyargici.pokeinfo.di.module
 
 import androidx.lifecycle.ViewModel
 import com.rezwan.codechallengebyshikho.di.ViewModelKey
-import com.rezwan.codechallengebyshikho.ui.fragments.postfragment.PostListViewModel
+import com.rezwan.codechallengebyshikho.ui.viewmodel.SharedViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -21,6 +21,6 @@ internal abstract class ViewModelModule {
      * */
     @Binds
     @IntoMap
-    @ViewModelKey(PostListViewModel::class)
-    protected abstract fun bindPostListViewModel(postListViewModel: PostListViewModel): ViewModel
+    @ViewModelKey(SharedViewModel::class)
+    protected abstract fun bindPostListViewModel(sharedViewModel: SharedViewModel): ViewModel
 }

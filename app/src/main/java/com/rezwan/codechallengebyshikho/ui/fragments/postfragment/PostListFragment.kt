@@ -1,5 +1,8 @@
 package com.rezwan.codechallengebyshikho.ui.fragments.postfragment
 
+import android.content.DialogInterface
+import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -8,7 +11,9 @@ import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
 import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.databinding.FragmentPostListBinding
 import com.rezwan.codechallengebyshikho.di.ViewModelFactory
+import com.rezwan.codechallengebyshikho.ext.showShortToast
 import com.rezwan.codechallengebyshikho.ui.base.BaseFragment
+import com.rezwan.codechallengebyshikho.ui.viewmodel.SharedViewModel
 import com.rezwan.etracker.mizanur.adapters.PostListAdapter
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -20,7 +25,7 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
     @Inject
     lateinit var viewModelFactory: ViewModelFactory
 
-    val viewModel: PostListViewModel by viewModels { viewModelFactory }
+    val viewModel: SharedViewModel by viewModels { viewModelFactory }
 
     var plistAdapter = PostListAdapter(ArrayList()) {}
 
@@ -37,12 +42,35 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
 
     override fun setUpListener() {
         binding.swipeRefreshLayout.setOnRefreshListener(this)
+        binding.fabAddPost.setOnClickListener { showAddPostDialog() }
     }
+
 
     override fun setUpObservers() {
         bindUI()
         viewModel.getPosts()
     }
+
+    private fun showAddPostDialog() {
+        val alert: AlertDialog.Builder = AlertDialog.Builder(requireContext())
+        alert.setTitle("Title")
+        alert.setMessage("Message")
+
+        val input = EditText(requireContext())
+        alert.setView(input)
+
+        alert.setPositiveButton("Ok") { dialog, whichButton ->
+            val value: String = input.text.toString()
+            context?.showShortToast(value)
+        }
+
+        alert.setNegativeButton("Cancel") { dialog, whichButton ->
+            // Canceled.
+        }
+
+        alert.show()
+    }
+
 
     // Global.launch is not good option because fragment has a lifecycle.
     // We create ScopedFragment and this fragment extended from ScopedFragment for this reason.
