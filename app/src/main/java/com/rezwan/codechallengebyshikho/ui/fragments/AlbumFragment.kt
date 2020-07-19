@@ -4,10 +4,10 @@ package com.rezwan.codechallengebyshikho.ui.fragments
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.rezwan.codechallengebyshikho.GetAlbumQuery
 import com.rezwan.codechallengebyshikho.R
-import com.rezwan.codechallengebyshikho.databinding.FragmentUserBinding
+import com.rezwan.codechallengebyshikho.databinding.FragmentAlbumBinding
 import com.rezwan.codechallengebyshikho.di.ViewModelFactory
 import com.rezwan.codechallengebyshikho.ext.error
 import com.rezwan.codechallengebyshikho.ui.base.BaseFragment
@@ -17,7 +17,7 @@ import com.rtchubs.filmadmin.adapters.PhotoListAdapter
 import javax.inject.Inject
 
 
-class UserFragment : BaseFragment<FragmentUserBinding>(){
+class AlbumFragment : BaseFragment<FragmentAlbumBinding>(), SwipeRefreshLayout.OnRefreshListener {
 
     @Inject
     lateinit var viewModelFactory: ViewModelFactory
@@ -25,7 +25,7 @@ class UserFragment : BaseFragment<FragmentUserBinding>(){
     val viewModel: SharedViewModel by viewModels { viewModelFactory }
 
 
-    override fun getLayoutRes(): Int = R.layout.fragment_user
+    override fun getLayoutRes(): Int = R.layout.fragment_album
 
     override fun setUpInitializers() {
         viewModel.getAlbum("1")
@@ -33,6 +33,7 @@ class UserFragment : BaseFragment<FragmentUserBinding>(){
 
     override fun setUpListener() {
         initRecyclerConfig()
+        binding.swipeRefreshAlbumLayout.setOnRefreshListener(this)
     }
 
     override fun setUpObservers() {
@@ -59,8 +60,12 @@ class UserFragment : BaseFragment<FragmentUserBinding>(){
     private fun initRecyclerConfig(){
         with( binding.recyclerUser){
             setHasFixedSize(true)
-            layoutManager = GridLayoutManager(context, 2)
+//            layoutManager = GridLayoutManager(context, 2)
             addItemDecoration(GridItemDecoration(10, 2))
         }
+    }
+
+    override fun onRefresh() {
+        viewModel.getAlbum("1")
     }
 }

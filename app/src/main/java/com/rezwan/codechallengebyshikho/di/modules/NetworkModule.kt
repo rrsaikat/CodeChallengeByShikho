@@ -1,13 +1,10 @@
 package com.rezwan.codechallengebyshikho.di.modules
 
 import android.content.Context
-import android.webkit.WebSettings
 import com.apollographql.apollo.ApolloClient
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.rezwan.codechallengebyshikho.const.appconst.BASE_URL
-import com.rezwan.codechallengebyshikho.data.data_source.DataSourceModule
-import com.rezwan.codechallengebyshikho.data.repository.UserRepository
+import com.rezwan.codechallengebyshikho.BuildConfig.BASE_URL
 import com.rezwan.codechallengebyshikho.utils.UserAgentInterceptor
 import dagger.Module
 import dagger.Provides

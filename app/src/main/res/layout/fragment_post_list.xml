@@ -17,7 +17,7 @@
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".ui.fragments.postfragment.PostListFragment">
+            tools:context=".ui.fragments.PostListFragment">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_postlist"
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,10 @@
             android:layout_margin="@dimen/fab_margin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/ic_input_add" />
+            android:backgroundTint="#f5f5f5"
+            android:background="@color/colorPrimaryDark"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

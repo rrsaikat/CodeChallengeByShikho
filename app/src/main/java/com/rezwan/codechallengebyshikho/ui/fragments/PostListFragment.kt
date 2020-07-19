@@ -1,4 +1,4 @@
-package com.rezwan.codechallengebyshikho.ui.fragments.postfragment
+package com.rezwan.codechallengebyshikho.ui.fragments
 
 import android.view.LayoutInflater
 import android.view.View

@@ -5,6 +5,14 @@ apply plugin: 'com.apollographql.apollo'
 apply plugin: 'kotlin-kapt'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Rezwan\\keystores\\codechallengebyshikho.jks')
+            storePassword '123456'
+            keyPassword '123456'
+            keyAlias 'keyAlias'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
@@ -13,15 +21,20 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.8"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String","BASE_URL","\"https://graphqlzero.almansi.me/api\"")
+        }
         release {
-            minifyEnabled false
+            buildConfigField("String","BASE_URL","\"https://graphqlzero.almansi.me/api\"")
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -38,6 +51,13 @@ android {
 
     buildFeatures {
         dataBinding = true
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def name = "CodeChallengeByShikho-${variant.versionName}.apk"
+            output.outputFileName = name
+        }
     }
 }
 
@@ -98,11 +118,7 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:2.20"
     kapt "com.google.dagger:dagger-android-processor:2.20"
 
-    //swipe menu layout
-    implementation 'io.sulek.ssml:simpleswipemenulayout:1.0.4'
-
     //image loading library
-    implementation 'com.facebook.fresco:fresco:2.0.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }

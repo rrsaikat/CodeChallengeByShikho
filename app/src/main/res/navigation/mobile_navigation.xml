@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/navigation_users"
-        android:name="com.rezwan.codechallengebyshikho.ui.fragments.UserFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.AlbumFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_user" />
+        tools:layout="@layout/fragment_album" />
     <fragment
         android:id="@+id/navigation_posts"
-        android:name="com.rezwan.codechallengebyshikho.ui.fragments.postfragment.PostListFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.PostListFragment"
         android:label="@string/title_posts"
         tools:layout="@layout/fragment_post_list" />
     <fragment

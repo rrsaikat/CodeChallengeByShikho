@@ -1,7 +1,7 @@
 package com.rezwan.codechallengebyshikho.di.modules
 
-import com.rezwan.codechallengebyshikho.ui.fragments.postfragment.PostListFragment
-import com.rezwan.codechallengebyshikho.ui.fragments.UserFragment
+import com.rezwan.codechallengebyshikho.ui.fragments.PostListFragment
+import com.rezwan.codechallengebyshikho.ui.fragments.AlbumFragment
 import com.rezwan.codechallengebyshikho.ui.fragments.QLFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -13,7 +13,7 @@ import dagger.android.ContributesAndroidInjector
 abstract class FragmentModule {
 
     @ContributesAndroidInjector() // Attaches fragment to Dagger graph.
-    abstract fun contributeUserFragment(): UserFragment
+    abstract fun contributeUserFragment(): AlbumFragment
 
     @ContributesAndroidInjector() // Attaches fragment to Dagger graph.
     abstract fun contributePostListFragment(): PostListFragment

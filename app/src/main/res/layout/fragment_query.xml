@@ -19,8 +19,8 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:text="Please select your quey type :"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/radioGroup"
@@ -30,15 +30,15 @@
 
             <RadioGroup
                 android:id="@+id/radioGroup"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="@+id/textView2">
 
 
                 <RadioButton
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:checked="false"
-                    android:text="Get a Post"/>
+                    android:text="Get a Post" />
 
             </RadioGroup>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -72,12 +72,13 @@
                 android:id="@+id/edt_id"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/post_item_bg"
                 android:ems="10"
+                android:hint="Enter user/post id"
                 android:inputType="number"
                 android:padding="10dp"
-                android:background="@drawable/post_item_bg"
                 android:textColor="@color/colorPrimaryDark"
-                android:hint="Enter user/post id"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -91,13 +92,16 @@
             app:layout_constraintTop_toBottomOf="@+id/input_area_2"
             tools:layout_editor_absoluteX="10dp">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="Submit"
+                app:cornerRadius="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                style="@style/Widget.MaterialComponents.Button"
                 android:textColor="@android:color/white"
                 android:background="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -109,7 +113,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#f2f2f2"
+            android:background="@drawable/post_item_bg"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

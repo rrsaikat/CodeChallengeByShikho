@@ -21,8 +21,6 @@ class PhotoListAdapter(
     var list: List<GetAlbumQuery.Data1>,
     val photoClickListener: (GetAlbumQuery.Data1) -> Unit = {}
 ) : BaseAdapter<GetAlbumQuery.Data1>(list) {
-    @Inject
-    lateinit var app: App
 
     override fun onCreateViewHolderBase(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return PhotoViewHolder(
@@ -38,17 +36,17 @@ class PhotoListAdapter(
             binding?.tvAlbumtitle?.text = "Id: ${data.id}"
             binding?.tvAlbumDetails?.text = data.title ?: ""
 
-//            val url = GlideUrl(
-//                it.thumbnailUrl, LazyHeaders.Builder()
-//                    .addHeader("User-Agent", WebSettings.getDefaultUserAgent(binding!!.ivAlbum.context))
-//                    .build()
-//            )
+            val url = GlideUrl(
+                data.thumbnailUrl, LazyHeaders.Builder()
+                    .addHeader("User-Agent", WebSettings.getDefaultUserAgent(binding!!.ivAlbum.context))
+                    .build()
+            )
 
             binding?.ivAlbum?.let {
                 Glide.with(it.context)
-                    .load(data.thumbnailUrl)
+                    .load(url)
                     .centerCrop()
-                    .placeholder(R.drawable.ic_shikho)
+                    .placeholder(R.drawable.post_item_bg)
                     .into(binding.ivAlbum)
             }
         }
@@ -62,7 +60,6 @@ class PhotoListAdapter(
                 override fun onClick(v: View?) {
                     photoClickListener(list[adapterPosition])
                 }
-
             })
         }
     }
