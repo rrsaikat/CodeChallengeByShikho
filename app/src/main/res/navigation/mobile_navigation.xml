@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_users">
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.AlbumFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_album" />
+    <fragment
+        android:id="@+id/navigation_posts"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.PostListFragment"
+        android:label="@string/title_posts"
+        tools:layout="@layout/fragment_post_list" />
+    <fragment
+        android:id="@+id/navigation_finder"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.QLFragment"
+        android:label="@string/title_finder"
+        tools:layout="@layout/fragment_query" />
+
+</navigation>
