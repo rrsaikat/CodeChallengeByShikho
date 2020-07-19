@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf191aee-e10f-4508-9049-18bd89ba7874" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="JB6DOZTC9LRCX45P" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\Rezwan\keystores\codechallengebyshikho.jks" />
+    <option name="KEY_ALIAS" value="keyAlias" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eql27yGUFesOXgwVhcEHlanbTS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="192.168.63.104:5555" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-19T13:33:06.202Z" />
+    <property name="ExportApk.ApkPath" value="C:\RezwanAndroidProjects\GraphQL\CodeChallengeByShiko\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/keystores/codechallengebyshikho.jks" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-658601111">
+      <recent name="com.rezwan.codechallengebyshikho.ui.info" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.rezwan.codechallengebyshikho.ui.fragments.postfragment" />
+      <recent name="com.rezwan.codechallengebyshikho.ui.base" />
+      <recent name="com.rezwan.codechallengebyshikho.data.db" />
+      <recent name="com.rezwan.codechallengebyshikho.utils" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.rezwan.codechallengebyshikho.ui.fragments" />
+      <recent name="com.rezwan.codechallengebyshikho.ui.viewmodel" />
+      <recent name="com.rezwan.codechallengebyshikho.ui.fragments.postfragment" />
+    </key>
+    <key name="android.template.113454319">
+      <recent name="com.rezwan.codechallengebyshikho.ui.userposts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\RezwanAndroidProjects\GraphQL\CodeChallengeByShiko\app\src\main\res\drawable" />
+      <recent name="C:\RezwanAndroidProjects\GraphQL\CodeChallengeByShiko\app\src\main\java\com\rezwan\codechallengebyshikho\ext" />
+      <recent name="C:\RezwanAndroidProjects\GraphQL\CodeChallengeByShiko\app\src\main\java\com\rezwan\codechallengebyshikho\adapters" />
+      <recent name="C:\RezwanAndroidProjects\GraphQL\CodeChallengeByShiko\app\src\main\java\com\rezwan\codechallengebyshikho\utils" />
+      <recent name="C:\RezwanAndroidProjects\GraphQL\CodeChallengeByShiko\app\src\main\java\com\rezwan\codechallengebyshikho\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf191aee-e10f-4508-9049-18bd89ba7874" name="Default Changelist" comment="" />
+      <created>1595056793181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595056793181</updated>
+    </task>
+    <task id="LOCAL-00001" summary="app icon attached , mvvm setup and parsed &quot;GetAllPosts&quot; query successfully">
+      <created>1595097838844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595097838844</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;Get a post&quot; and &quot;Get a user&quot; query done into finder tab">
+      <created>1595133278088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595133278088</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;Get Album Photos&quot; query done and image loading issue solved by adding &quot;user-agent&quot; into header for given api.">
+      <created>1595163211291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595163211291</updated>
+    </task>
+    <task id="LOCAL-00004" summary="final release of apk v1.0.8">
+      <created>1595179402189</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595179402189</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="app icon attached , mvvm setup and parsed &quot;GetAllPosts&quot; query successfully" />
+    <MESSAGE value="&quot;Get a post&quot; and &quot;Get a user&quot; query done into finder tab" />
+    <MESSAGE value="&quot;Get Album Photos&quot; query done and image loading issue solved by adding &quot;user-agent&quot; into header for given api." />
+    <MESSAGE value="final release of apk v1.0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="final release of apk v1.0.8" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="81" y="51" key="#PSD" timestamp="1595176435021">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="81" y="51" key="#PSD/0.0.1366.768@0.0.1366.768" timestamp="1595176435021" />
+    <state x="434" y="32" key="#com.intellij.ide.util.MemberChooser" timestamp="1595173161223">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="434" y="32" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595173161223" />
+    <state x="184" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595100062935">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1595100062935" />
+    <state x="350" y="71" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595066470951">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="350" y="71" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1595066470951" />
+    <state x="352" y="0" width="665" height="768" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1595167136923">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="352" y="0" width="665" height="768" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1595167136923" />
+    <state x="263" y="131" key="AndroidCreateResourceFileDialog" timestamp="1595172027050">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="263" y="131" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1595172027050" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1595179401167">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1595179401167" />
+    <state width="590" height="546" key="DebuggerActiveHint" timestamp="1595089309740">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="590" height="546" key="DebuggerActiveHint/0.0.1366.768@0.0.1366.768" timestamp="1595089309740" />
+    <state x="412" y="81" key="FileChooserDialogImpl" timestamp="1595175973051">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="412" y="81" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595175973051" />
+    <state width="1292" height="338" key="GridCell.Tab.0.bottom" timestamp="1595178950288">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1292" height="338" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595178950288" />
+    <state width="1292" height="338" key="GridCell.Tab.0.center" timestamp="1595178950288">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1292" height="338" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595178950288" />
+    <state width="1292" height="338" key="GridCell.Tab.0.left" timestamp="1595178950288">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1292" height="338" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595178950288" />
+    <state width="1292" height="338" key="GridCell.Tab.0.right" timestamp="1595178950288">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1292" height="338" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595178950288" />
+    <state x="75" y="0" key="SettingsEditor" timestamp="1595176401708">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="75" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595176401708" />
+    <state x="175" y="51" key="Vcs.Push.Dialog.v2" timestamp="1595179410913">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="175" y="51" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1595179410913" />
+    <state x="467" y="148" key="chooseDestDirectoryDialog" timestamp="1595174239472">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="467" y="148" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595174239472" />
+    <state x="428" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595133231652">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="428" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1595133231652" />
+    <state x="0" y="0" width="790" height="768" key="find.popup" timestamp="1595128607280">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" width="790" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1595128607280" />
+    <state x="255" y="171" key="run.anything.popup" timestamp="1595064867494">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="255" y="171" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1595064867494" />
+  </component>
+</project>
