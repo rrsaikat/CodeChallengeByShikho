@@ -3,6 +3,7 @@ package com.rezwan.codechallengebyshikho
 import android.app.Activity
 import android.app.Application
 import android.os.StrictMode
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.rezwan.codechallengebyshikho.di.components.DaggerAppComponent
 import com.rezwan.codechallengebyshikho.di.modules.DatabaseModule
 import com.rezwan.codechallengebyshikho.di.modules.NetworkModule
@@ -20,6 +21,7 @@ class App:Application() , HasActivityInjector{
 
     override fun onCreate() {
         super.onCreate()
+        Fresco.initialize(this)
         if (android.os.Build.VERSION.SDK_INT > 16) {
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)

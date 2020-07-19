@@ -9,6 +9,7 @@ import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.databinding.FragmentQueryBinding
 import com.rezwan.codechallengebyshikho.di.ViewModelFactory
 import com.rezwan.codechallengebyshikho.ext.error
+import com.rezwan.codechallengebyshikho.ext.hideKeyboard
 import com.rezwan.codechallengebyshikho.ext.showShortToast
 import com.rezwan.codechallengebyshikho.ui.base.BaseFragment
 import com.rezwan.codechallengebyshikho.ui.viewmodel.SharedViewModel
@@ -29,8 +30,11 @@ class QLFragment : BaseFragment<FragmentQueryBinding>(), RadioGroup.OnCheckedCha
     }
 
     override fun setUpListener() {
-        binding.btnSubmit.setOnClickListener { runUserPrefferedQL() }
         binding.radioGroup.setOnCheckedChangeListener(this)
+        binding.btnSubmit.setOnClickListener {
+            hideKeyboard()
+            runUserPrefferedQL()
+        }
     }
 
     override fun setUpObservers() {

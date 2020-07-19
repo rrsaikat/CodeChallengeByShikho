@@ -1,6 +1,7 @@
 package com.rezwan.codechallengebyshikho.ui.fragments.postfragment
 
-import android.content.DialogInterface
+import android.view.LayoutInflater
+import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
@@ -11,7 +12,11 @@ import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
 import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.databinding.FragmentPostListBinding
 import com.rezwan.codechallengebyshikho.di.ViewModelFactory
+import com.rezwan.codechallengebyshikho.ext.error
 import com.rezwan.codechallengebyshikho.ext.showShortToast
+import com.rezwan.codechallengebyshikho.ext.validatelistener
+import com.rezwan.codechallengebyshikho.model.Post
+import com.rezwan.codechallengebyshikho.model.PostAction
 import com.rezwan.codechallengebyshikho.ui.base.BaseFragment
 import com.rezwan.codechallengebyshikho.ui.viewmodel.SharedViewModel
 import com.rezwan.etracker.mizanur.adapters.PostListAdapter
@@ -52,61 +57,61 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
     }
 
     private fun showAddPostDialog() {
-        val alert: AlertDialog.Builder = AlertDialog.Builder(requireContext())
-        alert.setTitle("Title")
-        alert.setMessage("Message")
+        val factory = LayoutInflater.from(requireContext())
+        val textEntryView: View = factory.inflate(R.layout.add_post_entry, null)
+        val titleField = textEntryView.findViewById<View>(R.id.edt_title) as EditText
+        val bodyField = textEntryView.findViewById<View>(R.id.edt_body) as EditText
 
-        val input = EditText(requireContext())
-        alert.setView(input)
+        titleField.validatelistener(bodyField)
+        bodyField.validatelistener(titleField)
 
-        alert.setPositiveButton("Ok") { dialog, whichButton ->
-            val value: String = input.text.toString()
-            context?.showShortToast(value)
+        val alert: AlertDialog.Builder = AlertDialog.Builder(requireContext()).apply {
+            setTitle("Hi")
+            setMessage("To add a new post we need some information")
+            setCancelable(false)
+            setView(textEntryView)
+            setPositiveButton("Submit") { dialog, whichButton ->
+                val title: String = titleField.text.toString()
+                val body: String = bodyField.text.toString()
+                if (title.isEmpty() || body.isEmpty()) context.showShortToast("Field cann't be empty")
+                else viewModel.createPostQuery(title, body)
+            }
+
+            setNegativeButton("Cancel") { dialog, whichButton -> }
         }
-
-        alert.setNegativeButton("Cancel") { dialog, whichButton ->
-            // Canceled.
-        }
-
         alert.show()
     }
-
 
     // Global.launch is not good option because fragment has a lifecycle.
     // We create ScopedFragment and this fragment extended from ScopedFragment for this reason.
     private fun bindUI() = launch {
         viewModel.postLivedata.observe(this@PostListFragment, Observer { postList ->
             postList.data?.let {
-                plistAdapter.updatedata(it as List<LoadAllPostsQuery.Data1>)
+                val adapter = PostListAdapter(it as List<LoadAllPostsQuery.Data1>) { onPostActionClicked(it)}
+                binding.recyclerPostlist.adapter = adapter
+                adapter.notifyDataSetChanged()
+                error(this, "Done")
             }
-
         })
 
 
         viewModel.isLoading.observe(this@PostListFragment, Observer { loadervalue ->
             binding.progressbar.isVisible = loadervalue
+            binding.swipeRefreshLayout.isRefreshing = false
         })
+    }
+
+    private fun onPostActionClicked(post: Post) {
+        if (post.postAction == PostAction.EDIT){
+            context?.showShortToast("Edit")
+        }else if (post.postAction == PostAction.DELETE){
+            context?.showShortToast("DELETE")
+        }
     }
 
     private fun initRecyclerConfig() {
         binding.recyclerPostlist.setHasFixedSize(true)
-        plistAdapter = PostListAdapter(
-            listOf(
-                LoadAllPostsQuery.Data1("", "", ""),
-                LoadAllPostsQuery.Data1("", "", ""),
-                LoadAllPostsQuery.Data1("", "", ""),
-                LoadAllPostsQuery.Data1("", "", ""),
-                LoadAllPostsQuery.Data1("", "", ""),
-                LoadAllPostsQuery.Data1("", "", ""),
-                LoadAllPostsQuery.Data1("", "", "")
-            )
-        ) {
-
-        }
-
         binding.recyclerPostlist.adapter = plistAdapter
-        plistAdapter.notifyDataSetChanged()
-
     }
 
     companion object {
@@ -118,6 +123,4 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
     override fun onRefresh() {
         viewModel.getPosts()
     }
-
-
 }

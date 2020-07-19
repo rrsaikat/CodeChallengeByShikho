@@ -60,3 +60,26 @@ mutation CreatePost(
         body
     }
 }
+
+query GetAlbum(
+    $id: ID!
+) {
+    photo(id: $id) {
+        album {
+            id
+            title
+            user {
+                id
+                email
+                website
+            }
+            photos{
+                data{
+                    id
+                    title
+                    thumbnailUrl
+                }
+            }
+        }
+    }
+}
