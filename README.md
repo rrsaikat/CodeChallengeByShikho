@@ -12,9 +12,15 @@
 A simple Android Application which uses GraphQL API (https://graphqlzero.almansi.me/api) to perform CRUD operations on dummy data.
 </p>
 
-![](?style=centerme)
  <p align="center"> 
     <img src="https://github.com/rrsaikat/CodeChallengeByShikho/blob/master/shikho.png" alt="app preview">
+ </p>
+
+
+### App Architechture
+
+<p align="center"> 
+    <img src="https://github.com/rrsaikat/CodeChallengeByShikho/blob/master/Architechture%20Diagram.png" alt="architechture pattern">
  </p>
 
 
