@@ -9,7 +9,8 @@
     <a href="https://twitter.com/RsaikatR"><img alt="Twitter follow" src="https://img.shields.io/twitter/follow/RsaikatR.svg?style=social"/></a>
 
 <p align="center">  
-A simple Android Application which uses GraphQL API (https://graphqlzero.almansi.me/api) to perform CRUD operations on dummy data.
+A simple Android Application which uses GraphQL API (https://graphqlzero.almansi.me/api) to perform CRUD operations on dummy data. The application is written entirely in Kotlin.
+Android Jetpack is used as an Architecture glue including but not limited to ViewModel, LiveData, Lifecycles, Navigation, Room and Data Binding. The application does network HTTP requests via GraphQL, APolloClient, OkHttp and GSON. Loaded data is saved to SQL based database Room, which serves as data warehouse and support offline mode. Kotlin Coroutines manage background threads with simplified code and reducing needs for callbacks. Combination of Coroutines and Kotlin build in functions (transformation, collections) are preferred over RxJava 2. Work manager does synchronisation job being compatible with Doze Mode and using battery efficiently. Navigation component manages in-app navigation.Dagger 2 is used for dependency injection. Glide is used for lazy image loading.
 </p>
 
  <p align="center"> 
@@ -29,7 +30,7 @@ Features | Status | Discussion
 --- | --- | ---
 Get a Post, Get a User, Get User's Posts, Get All Posts  Query | done | -
 Load & Display the photo album from “Get a Photo’s Album” Query | done | -
-Create a Post, Update a Post, Delete a Post | Not Done | Having issues
+Create a Post, Update a Post, Delete a Post | Not Done | Having issues from server side
 Language: 100% Kotlin | Done | -
 Github/Gitlab with all development branches & commit history timeline | done | -
 Followed Recommended App Architecture | done | MVVM
