@@ -12,7 +12,10 @@
 A simple Android Application which uses GraphQL API (https://graphqlzero.almansi.me/api) to perform CRUD operations on dummy data.
 </p>
 
-![](https://github.com/rrsaikat/CodeChallengeByShikho/blob/master/shikho.png)
+![](?style=centerme)
+ <p align="center"> 
+    <img src="https://github.com/rrsaikat/CodeChallengeByShikho/blob/master/shikho.png" alt="app preview">
+ </p>
 
 
 #### Statistics
