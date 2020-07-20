@@ -7,6 +7,7 @@ import kotlin.reflect.KClass
 /**
  * An annotation class which tells dagger that it can be used to determine keys in multi bound maps.
  */
+
 @MustBeDocumented
 @Target(
     AnnotationTarget.FUNCTION,
@@ -15,4 +16,5 @@ import kotlin.reflect.KClass
 )
 @Retention(AnnotationRetention.RUNTIME)
 @MapKey
-annotation class ViewModelKey(val value: KClass<out ViewModel>) // We might use only those classes which inherit from ViewModel.
+annotation class ViewModelKey(val value: KClass<out ViewModel>)
+

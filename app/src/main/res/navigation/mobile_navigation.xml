@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/navigation_users"
-        android:name="com.rezwan.codechallengebyshikho.ui.fragments.AlbumFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.album.AlbumFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_album" />
     <fragment
         android:id="@+id/navigation_posts"
-        android:name="com.rezwan.codechallengebyshikho.ui.fragments.PostListFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.post.PostListFragment"
         android:label="@string/title_posts"
         tools:layout="@layout/fragment_post_list" />
     <fragment
         android:id="@+id/navigation_finder"
-        android:name="com.rezwan.codechallengebyshikho.ui.fragments.QLFragment"
+        android:name="com.rezwan.codechallengebyshikho.ui.fragments.query.QLFragment"
         android:label="@string/title_finder"
         tools:layout="@layout/fragment_query" />
 

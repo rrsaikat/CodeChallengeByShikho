@@ -11,25 +11,18 @@ import com.rezwan.codechallengebyshikho.ui.info.InfoActivity
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
+import dagger.android.support.DaggerAppCompatActivity
 import dagger.android.support.HasSupportFragmentInjector
 import javax.inject.Inject
 
-abstract class BaseActivity:AppCompatActivity(), HasSupportFragmentInjector{
-
-    @Inject
-    lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
-
-    @Inject
-    lateinit var app:App
-
-    override fun supportFragmentInjector(): AndroidInjector<Fragment> {
-        return dispatchingAndroidInjector
-    }
+abstract class BaseActivity: DaggerAppCompatActivity() {
+//    @Inject
+//    lateinit var app:App
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AndroidInjection.inject(this)
-        app.doForCreate(this)
+//        AndroidInjection.inject(this)
+        //app.doForCreate(this)
         initToollbarNav()
         setUpLayoutBinding()
         setUpInitializers()
@@ -66,7 +59,7 @@ abstract class BaseActivity:AppCompatActivity(), HasSupportFragmentInjector{
 
     override fun onDestroy() {
         super.onDestroy()
-        app.doForFinish(this)
+        //app.doForFinish(this)
     }
 
     fun clear() {

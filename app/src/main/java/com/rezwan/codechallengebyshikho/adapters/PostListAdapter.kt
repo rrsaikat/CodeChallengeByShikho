@@ -11,9 +11,9 @@ import com.rezwan.codechallengebyshikho.databinding.ItemPostBinding
 import com.rezwan.codechallengebyshikho.model.Post
 
 class PostListAdapter(
-    var list: List<LoadAllPostsQuery.Data1>,
+    var list: List<Post>,
     val btnClick: (Post) -> Unit = {}
-) : BaseAdapter<LoadAllPostsQuery.Data1>(list) {
+) : BaseAdapter<Post>(list) {
 
     override fun onCreateViewHolderBase(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return ListPostViewHolder(
@@ -32,7 +32,7 @@ class PostListAdapter(
         }
     }
 
-    fun updatedata(list: List<LoadAllPostsQuery.Data1>){
+    fun updatedata(list: List<Post>){
         this.list = list
         notifyDataSetChanged()
     }

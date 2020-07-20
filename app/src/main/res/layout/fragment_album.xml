@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.rezwan.codechallengebyshikho.ui.fragments.album.AlbumViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.AlbumFragment"
+        tools:context=".ui.fragments.album.AlbumFragment"
         android:layout_margin="8dp">
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -22,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:overScrollMode="never"
                 app:spanCount="2"
+                app:photoList="@{viewModel.photos}"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 tools:listitem="@layout/item_album"
                 app:layout_constraintEnd_toEndOf="parent"

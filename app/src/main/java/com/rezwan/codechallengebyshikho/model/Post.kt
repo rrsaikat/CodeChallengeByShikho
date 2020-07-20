@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "post_table")
 data class Post(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = false)
     @field:SerializedName("id")
     val id: String,
 
