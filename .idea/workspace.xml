@@ -11,35 +11,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf191aee-e10f-4508-9049-18bd89ba7874" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/rezwan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/CodeChallengeByShikho-1.0.8.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/rezwan/codechallengebyshikho/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/rezwan/codechallengebyshikho/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/BaseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/BaseAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/BaseViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/BaseViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/PhotoListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/PhotoListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/PostListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/adapters/PostListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/binding/BindingAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/binding/BindingAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/const/appconst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/const/appconst.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/dao/PhotoDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/dao/PhotoDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/dao/PostDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/dao/PostDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/AppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/AppDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/BaseDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/BaseDataSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/BaseRemoteDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/BaseRemoteDataSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/Result.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/Result.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/SingleSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/data_source/SingleSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/db/SeedDatabaseWorker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/db/SeedDatabaseWorker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/data/repository/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/ViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/ViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/ViewModelKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/ViewModelKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/components/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/components/AppComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ActivityModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ActivityModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ContextModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ContextModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/DataSourceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/DataSourceModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/DatabaseModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/DatabaseModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/FragmentModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/FragmentModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/GlideModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/GlideModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/NetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/RepositoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/RepositoryModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ViewModelFactoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ViewModelFactoryModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ViewModelModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/di/modules/ViewModelModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/LogExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/LogExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/appext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/appext.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/toast.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/toast.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/validation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ext/validation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/model/Photo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/model/Photo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/model/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/model/Post.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/BaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/BaseViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/ScopedFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/base/ScopedFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/fragments/AlbumFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/fragments/AlbumFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/fragments/PostListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/fragments/PostListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/fragments/QLFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/fragments/QLFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/home/HomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/home/HomeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/info/InfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/info/InfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/splash/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/splash/SplashActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/userposts/UserPostsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/userposts/UserPostsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/viewmodel/SharedViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/ui/viewmodel/SharedViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/Converter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/Converter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/GridItemDecoration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/GridItemDecoration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/LazyDeferred.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/LazyDeferred.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/UserAgenInterceptor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/UserAgenInterceptor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/WebUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezwan/codechallengebyshikho/utils/WebUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_add_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_add_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_broken_image_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_broken_image_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_delete_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_delete_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_find_in_page_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_find_in_page_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_image_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_image_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_info_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_info_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_github.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_github.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_iyoutube.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_iyoutube.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_linkedin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_linkedin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_shikho.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_shikho.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/post_item_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/post_item_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_posts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_posts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/add_post_entry.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/add_post_entry.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_album.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_album.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_post_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_post_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_query.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_album.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_album.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_post.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_post.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottomnav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottomnav.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/rezwan/codechallengebyshikho/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/rezwan/codechallengebyshikho/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +171,9 @@
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/keystores/codechallengebyshikho.jks" />
+    <property name="ScreenshotViewer.SavePath" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -192,25 +267,37 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="350" y="71" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1595191669096" />
-    <state x="413" y="82" key="FileChooserDialogImpl" timestamp="1595246029154">
+    <state x="383" y="197" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1595250393766">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="82" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595246029154" />
-    <state width="1309" height="168" key="GridCell.Tab.0.bottom" timestamp="1595246788444">
+    <state x="383" y="197" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1595250393766" />
+    <state x="413" y="82" key="FileChooserDialogImpl" timestamp="1595249050089">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="168" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595246788444" />
-    <state width="1309" height="168" key="GridCell.Tab.0.center" timestamp="1595246788444">
+    <state x="413" y="82" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595249050089" />
+    <state width="1309" height="118" key="GridCell.Tab.0.bottom" timestamp="1595250113293">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="168" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595246788444" />
-    <state width="1309" height="168" key="GridCell.Tab.0.left" timestamp="1595246788444">
+    <state width="1309" height="118" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595250113293" />
+    <state width="1309" height="118" key="GridCell.Tab.0.center" timestamp="1595250113292">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="168" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595246788444" />
-    <state width="1309" height="168" key="GridCell.Tab.0.right" timestamp="1595246788444">
+    <state width="1309" height="118" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595250113292" />
+    <state width="1309" height="118" key="GridCell.Tab.0.left" timestamp="1595250113292">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1309" height="168" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595246788444" />
+    <state width="1309" height="118" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595250113292" />
+    <state width="1309" height="118" key="GridCell.Tab.0.right" timestamp="1595250113292">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1309" height="118" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595250113292" />
+    <state x="121" y="0" key="ScreenshotViewer.Dimensions" timestamp="1595249050215">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="121" y="0" key="ScreenshotViewer.Dimensions/0.0.1366.768@0.0.1366.768" timestamp="1595249050215" />
+    <state x="75" y="0" key="SettingsEditor" timestamp="1595250365253">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="75" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595250365253" />
   </component>
 </project>
