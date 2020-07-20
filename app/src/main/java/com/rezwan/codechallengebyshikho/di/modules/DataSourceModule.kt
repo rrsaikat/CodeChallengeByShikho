@@ -10,8 +10,8 @@ import javax.inject.Singleton
 class DataSourceModule {
     @Provides
     @Singleton
-    internal fun provideDataSource(apolloClient: ApolloClient): PostDataSource {
-        return PostRemoteDataSource(apolloClient)
+    internal fun provideDataSource(apolloClient: ApolloClient): BaseDataSource {
+        return BaseRemoteDataSource(apolloClient)
     }
 
 }

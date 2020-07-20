@@ -10,13 +10,8 @@
         tools:context=".ui.fragments.AlbumFragment"
         android:layout_margin="8dp">
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/swipeRefreshAlbumLayout">
 
-
-            <androidx.recyclerview.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -27,8 +22,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <ProgressBar
             android:id="@+id/progressBarAlbum"

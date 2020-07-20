@@ -7,9 +7,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.google.android.material.snackbar.Snackbar
 import com.rezwan.codechallengebyshikho.LoadAllPostsQuery
 import com.rezwan.codechallengebyshikho.R
+import com.rezwan.codechallengebyshikho.data.data_source.Result
 import com.rezwan.codechallengebyshikho.databinding.FragmentPostListBinding
 import com.rezwan.codechallengebyshikho.di.ViewModelFactory
 import com.rezwan.codechallengebyshikho.ext.error
@@ -19,19 +20,17 @@ import com.rezwan.codechallengebyshikho.model.Post
 import com.rezwan.codechallengebyshikho.ui.base.BaseFragment
 import com.rezwan.codechallengebyshikho.ui.viewmodel.SharedViewModel
 import com.rezwan.etracker.mizanur.adapters.PostListAdapter
+import com.rtchubs.filmadmin.adapters.PhotoListAdapter
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
-class PostListFragment : BaseFragment<FragmentPostListBinding>(),
-    SwipeRefreshLayout.OnRefreshListener {
+class PostListFragment : BaseFragment<FragmentPostListBinding>() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelFactory
 
     val viewModel: SharedViewModel by viewModels { viewModelFactory }
-
-    var plistAdapter = PostListAdapter(ArrayList()) {}
 
 
     override fun onCreate() {
@@ -45,14 +44,28 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
     }
 
     override fun setUpListener() {
-        binding.swipeRefreshLayout.setOnRefreshListener(this)
         binding.fabAddPost.setOnClickListener { showAddPostDialog() }
     }
 
 
     override fun setUpObservers() {
-        bindUI()
-        viewModel.getPosts()
+        viewModel.posts.observe(this, Observer { result ->
+            when (result.status) {
+                Result.Status.SUCCESS -> {
+                    binding.progressbar.isVisible = false
+                    result.data?.let {
+                        val adapter = PostListAdapter(it) {}
+                        binding.recyclerPostlist.adapter = adapter
+                        adapter.notifyDataSetChanged()
+                    }
+                }
+                Result.Status.LOADING -> binding.progressbar.isVisible = true
+                Result.Status.ERROR -> {
+                    binding.progressbar.isVisible = false
+                    Snackbar.make(binding.root, result.message!!, Snackbar.LENGTH_LONG).show()
+                }
+            }
+        })
     }
 
     private fun showAddPostDialog() {
@@ -81,25 +94,6 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
         alert.show()
     }
 
-    // Global.launch is not good option because fragment has a lifecycle.
-    // We create ScopedFragment and this fragment extended from ScopedFragment for this reason.
-    private fun bindUI() = launch {
-        viewModel.postLivedata.observe(this@PostListFragment, Observer { postList ->
-            postList.data?.let {
-                val adapter = PostListAdapter(it as List<LoadAllPostsQuery.Data1>) { onPostActionClicked(it)}
-                binding.recyclerPostlist.adapter = adapter
-                adapter.notifyDataSetChanged()
-                error(this, "Done")
-            }
-        })
-
-
-        viewModel.isLoading.observe(this@PostListFragment, Observer { loadervalue ->
-            binding.progressbar.isVisible = loadervalue
-            binding.swipeRefreshLayout.isRefreshing = false
-        })
-    }
-
     private fun onPostActionClicked(post: Post) {
 //        if (post.postAction == PostAction.EDIT){
 //            context?.showShortToast("Edit")
@@ -110,16 +104,11 @@ class PostListFragment : BaseFragment<FragmentPostListBinding>(),
 
     private fun initRecyclerConfig() {
         binding.recyclerPostlist.setHasFixedSize(true)
-        binding.recyclerPostlist.adapter = plistAdapter
     }
 
     companion object {
         @JvmStatic
         fun newInstance() =
             PostListFragment()
-    }
-
-    override fun onRefresh() {
-        viewModel.getPosts()
     }
 }

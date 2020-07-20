@@ -21,19 +21,21 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.8"
+        versionName "1.0.15"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.release
+        buildConfigField("String","BASE_URL","\"https://graphqlzero.almansi.me/api\"")
     }
 
     buildTypes {
         debug {
-            buildConfigField("String","BASE_URL","\"https://graphqlzero.almansi.me/api\"")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
         }
         release {
-            buildConfigField("String","BASE_URL","\"https://graphqlzero.almansi.me/api\"")
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

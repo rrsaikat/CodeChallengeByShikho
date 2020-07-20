@@ -8,20 +8,24 @@ import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.rezwan.codechallengebyshikho.data.dao.UserPostDao
+import com.rezwan.codechallengebyshikho.data.dao.PhotoDao
+import com.rezwan.codechallengebyshikho.data.dao.PostDao
 import com.rezwan.codechallengebyshikho.data.db.SeedDatabaseWorker
+import com.rezwan.codechallengebyshikho.model.Photo
 import com.rezwan.codechallengebyshikho.model.Post
 import com.rezwan.codechallengebyshikho.utils.Converter
 
 /**
  * The Room database for this app
  */
-@Database(entities = [Post::class],
+@Database(entities = [Post::class, Photo::class],
     version = 1, exportSchema = false)
 @TypeConverters(Converter::class)
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun postDao(): UserPostDao
+    abstract fun postDao(): PostDao
+
+    abstract fun photoDao(): PhotoDao
 
     companion object {
 

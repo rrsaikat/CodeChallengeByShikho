@@ -13,14 +13,15 @@ import com.rezwan.codechallengebyshikho.App
 import com.rezwan.codechallengebyshikho.GetAlbumQuery
 import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.databinding.ItemAlbumBinding
+import com.rezwan.codechallengebyshikho.model.Photo
 import com.rezwan.etracker.mizanur.adapters.BaseAdapter
 import javax.inject.Inject
 
 
 class PhotoListAdapter(
-    var list: List<GetAlbumQuery.Data1>,
-    val photoClickListener: (GetAlbumQuery.Data1) -> Unit = {}
-) : BaseAdapter<GetAlbumQuery.Data1>(list) {
+    var list: List<Photo>,
+    val photoClickListener: (Photo) -> Unit = {}
+) : BaseAdapter<Photo>(list) {
 
     override fun onCreateViewHolderBase(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return PhotoViewHolder(
@@ -37,7 +38,7 @@ class PhotoListAdapter(
             binding?.tvAlbumDetails?.text = data.title ?: ""
 
             val url = GlideUrl(
-                data.thumbnailUrl, LazyHeaders.Builder()
+                data.imageUrl, LazyHeaders.Builder()
                     .addHeader("User-Agent", WebSettings.getDefaultUserAgent(binding!!.ivAlbum.context))
                     .build()
             )

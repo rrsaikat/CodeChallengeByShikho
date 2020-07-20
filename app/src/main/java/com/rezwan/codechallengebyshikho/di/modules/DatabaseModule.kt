@@ -12,13 +12,13 @@ import javax.inject.Singleton
 
 @Module(includes = [AppModule::class])
 class DatabaseModule {
-    @Singleton
-    @Provides
-    fun provideDb(app: Application) = AppDatabase.getInstance(app)
-
-    @Singleton
-    @Provides
-    fun providePostDao(db: AppDatabase) = db.postDao()
+//    @Singleton
+//    @Provides
+//    fun provideDb(app: Application) = AppDatabase.getInstance(app)
+//
+//    @Singleton
+//    @Provides
+//    fun providePostDao(db: AppDatabase) = db.postDao()
 
 
 //    @Singleton

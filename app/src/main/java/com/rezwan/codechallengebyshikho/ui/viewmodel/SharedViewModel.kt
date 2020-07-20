@@ -19,7 +19,10 @@ import kotlinx.coroutines.launch
 import java.lang.Exception
 import javax.inject.Inject
 
-class SharedViewModel @Inject constructor(val apolloClient: ApolloClient, val userRepository: UserRepository) : BaseViewModel() {
+class SharedViewModel @Inject constructor(val apolloClient: ApolloClient, userRepository: UserRepository) : BaseViewModel() {
+
+    @Inject
+    lateinit var app: App
 
     val isLoading = MutableLiveData<Boolean>()
     val postLivedata = MutableLiveData<LoadAllPostsQuery.Posts>()
@@ -28,9 +31,8 @@ class SharedViewModel @Inject constructor(val apolloClient: ApolloClient, val us
     val photoAlbumLivedata = MutableLiveData<GetAlbumQuery.Photos>()
 
     val posts = userRepository.fectchedPosts
+    val photos = userRepository.fectchedPhotos
 
-    @Inject
-    lateinit var app: App
 
     fun getPosts() {
         viewModelScope.launch {
@@ -67,7 +69,6 @@ class SharedViewModel @Inject constructor(val apolloClient: ApolloClient, val us
 
         }
     }
-
 
     fun getUser(id:String) {
         viewModelScope.launch {
