@@ -10,7 +10,6 @@
         tools:context=".ui.fragments.AlbumFragment"
         android:layout_margin="8dp">
 
-
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_user"
                 android:layout_width="match_parent"
