@@ -9,10 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.model.GlideUrl
 import com.bumptech.glide.load.model.LazyHeaders
+import com.rezwan.codechallengebyshikho.App
 import com.rezwan.codechallengebyshikho.GetAlbumQuery
 import com.rezwan.codechallengebyshikho.R
 import com.rezwan.codechallengebyshikho.databinding.ItemAlbumBinding
 import com.rezwan.etracker.mizanur.adapters.BaseAdapter
+import javax.inject.Inject
 
 
 class PhotoListAdapter(
@@ -48,11 +50,6 @@ class PhotoListAdapter(
                     .into(binding.ivAlbum)
             }
         }
-    }
-
-    fun updateData(plist: List<GetAlbumQuery.Data1>) {
-        this.list = plist
-        notifyDataSetChanged()
     }
 
     inner class PhotoViewHolder(view: View) : RecyclerView.ViewHolder(view) {

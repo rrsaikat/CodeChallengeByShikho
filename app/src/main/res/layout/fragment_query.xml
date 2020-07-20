@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.query.QLFragment"
+        tools:context=".ui.fragments.QLFragment"
         android:padding="10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout

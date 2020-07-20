@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import dagger.android.support.AndroidSupportInjection
 
 
 abstract class BaseFragment<DB : ViewDataBinding> : ScopedFragment() {
@@ -19,14 +20,18 @@ abstract class BaseFragment<DB : ViewDataBinding> : ScopedFragment() {
         binding.lifecycleOwner = this
     }
 
-    abstract fun onCreateView()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        AndroidSupportInjection.inject(this)
+    }
+
+    abstract fun onCreate()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        onCreateView()
         init(inflater, container)
         return binding.root
     }
