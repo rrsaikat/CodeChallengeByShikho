@@ -31,9 +31,9 @@ Get a Post, Get a User, Get User's Posts, Get All Posts  Query | done | -
 Load & Display the photo album from “Get a Photo’s Album” Query | done | -
 Create a Post, Update a Post, Delete a Post | Not Done | Having issues
 Language: 100% Kotlin | Done | -
-VCS: Github/Gitlab with all development branches & commit history timeline | done | -
-Followed Recommended App Architecture | done | MVVM (Room Presistance)
-Android Architecture Components from Android Jetpack | Done | LiveData, Coroutines, Dagger2, Navigation, Data Binding
+Github/Gitlab with all development branches & commit history timeline | done | -
+Followed Recommended App Architecture | done | MVVM
+Android Architecture Components from Android Jetpack | Done | LiveData, Viewmodel, Coroutines, Dagger2, Navigation, Data Binding, WorkManager, Room, Android Ktx
 GraphQL Client | Done | Apollo
 
 
