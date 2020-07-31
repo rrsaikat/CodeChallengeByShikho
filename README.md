@@ -4,8 +4,8 @@
     <a href="https://github.com/rrsaikat"><img alt="API" src="https://badges.frapsoft.com/os/v1/open-source.png?v=103"/></a>
    <a href=""><img alt="Github Downloads (total)" src="https://img.shields.io/github/downloads/rrsaikat/CodeChallengeByShikho/total.svg"/></a>
   <a href="https://github.com/rrsaikat/CodeChallengeByShikho/raw/master/app/release/CodeChallengeByShikho-1.0.15.apk"><img alt="Download" src="https://img.shields.io/badge/DownloadApk-v1.0.15-green.svg"/></a>
-  <a href="https://github.com/rrsaikat/AutoCallScheduler/graphs/traffic"><img alt="Total Clones" src="https://img.shields.io/badge/Clones-9-orange"/></a>
-    <a href="https://github.com/rrsaikat/AutoCallScheduler/graphs/traffic"><img alt="Total Views" src="https://img.shields.io/badge/Views-101-brightgreen"/></a>
+  <a href="https://github.com/rrsaikat/CodeChallengeByShikho/graphs/traffic"><img alt="Total Clones" src="https://img.shields.io/badge/Clones-9-orange"/></a>
+    <a href="https://github.com/rrsaikat/CodeChallengeByShikho/graphs/traffic"><img alt="Total Views" src="https://img.shields.io/badge/Views-101-brightgreen"/></a>
     <a href="https://twitter.com/RsaikatR"><img alt="Twitter follow" src="https://img.shields.io/twitter/follow/RsaikatR.svg?style=social"/></a>
 
 <p align="center">  
